@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "playground_ratings",
+  "info": {
+    "name": "playgroundRatings",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "grade": {
+      "type": "integer",
+      "max": 4,
+      "min": 0
+    },
+    "author": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "playground_ratings"
+    },
+    "playground": {
+      "model": "playground",
+      "via": "playground_ratings"
+    }
+  }
+}

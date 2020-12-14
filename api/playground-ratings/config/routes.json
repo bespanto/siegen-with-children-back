@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/playground-ratings",
+      "handler": "playground-ratings.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/playground-ratings/count",
+      "handler": "playground-ratings.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/playground-ratings/:id",
+      "handler": "playground-ratings.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/playground-ratings",
+      "handler": "playground-ratings.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/playground-ratings/:id",
+      "handler": "playground-ratings.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/playground-ratings/:id",
+      "handler": "playground-ratings.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

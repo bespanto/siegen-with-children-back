@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "playgrounds",
+  "info": {
+    "name": "playground"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "address": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "author": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "playgrounds"
+    },
+    "playground_ratings": {
+      "via": "playground",
+      "collection": "playground-ratings"
+    }
+  }
+}
